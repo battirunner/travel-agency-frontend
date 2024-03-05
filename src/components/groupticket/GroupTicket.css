@@ -1,0 +1,95 @@
+.custom-collapse {
+  transition-property: height;
+  transition-duration: 400ms;
+  overflow: hidden;
+  /* background-color: #cccccc; */
+}
+
+.rotate-icon {
+  /* transform: rotate(45deg); */
+  transition-property: transform;
+  transition-duration: 400ms;
+  /* overflow: hidden; */
+}
+
+.bg-purple-custom-light {
+  background-color: #edf5ff;
+}
+
+.bg-purple-mid-light {
+  background-color: #d3e2f5;
+}
+
+.bg-custom-gray {
+  background-color: #b1b1b1;
+}
+
+.fs-custom-sm {
+  font-size: small;
+}
+
+.fs-custom-smx {
+  font-size: smaller;
+}
+
+.fs-custom-smxx {
+  font-size: x-small;
+}
+
+.roteate-icon-180 {
+  transform: rotate(180deg);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ticket-card::before {
+  position: absolute;
+  height: 20px;
+  color: white;
+  /* width: auto; */
+  top: 8px;
+  left: -10px;
+  padding: 0 15px 0 15px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+}
+
+.ticket-card-angel::after {
+  position: absolute;
+  content: "";
+  height: 0px;
+  color: white;
+  width: 20px;
+  top: 8px;
+  font-size: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.ticket-card.preferred-deal::before {
+  content: "Preferred Deal";
+  width: 100px;
+  background: #283593;
+}
+
+.ticket-card-angel.preferred-deal::after {
+  left: 80px;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #283593;
+  border-top: 10px solid #283593;
+}
+
+.ticket-card.best-deal::before {
+  content: "Best Deal";
+  width: 80px;
+  background: #11ab35;
+}
+
+.ticket-card-angel.best-deal::after {
+  left: 65px;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #11ab35;
+  border-top: 10px solid #11ab35;
+}
